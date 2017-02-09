@@ -1,5 +1,3 @@
-# MoviesWebCriteria
-
 This is a demonstration project on Spring development. It involves:
 
 MySQL as a database with Spring Criteria support 
