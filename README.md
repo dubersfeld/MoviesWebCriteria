@@ -27,7 +27,9 @@ Note: this project was run on my home computer. To run it on your system you hav
 
 source/production/resources/install.properties: photoTempDir=/home/dominique/Pictures/tmp/
 
-source/production/resources/log4j2.xml:
+source/production/resources/log4j2.xml: &lt;RollingFile name="WroxFileAppender" fileName="/home/dominique/logs/application.log"
+                    				 filePattern="/home/dominique/logs/application-%d{MM-dd-yyyy}-%i.log"&gt;
+          
 
 where the folder /home/dominique should be replaced by a folder that matches your own file system.
 
