@@ -33,4 +33,11 @@ source/production/resources/log4j2.xml: &lt;RollingFile name="WroxFileAppender" 
 
 where the folder /home/dominique should be replaced by a folder that matches your own file system.
 
-Dominique Ubersfeld
+
+This project can be deployed on Tomcat with the context root: 
+
+localhost:8080/movies-web
+
+
+
+Dominique Ubersfeld, Cachan, France
