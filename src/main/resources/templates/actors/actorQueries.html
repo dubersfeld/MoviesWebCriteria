@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header::header(title='actorQueries')">
+</head>
+<body>
+
+	<nav th:replace="fragments/header::language"></nav>
+	
+	<a th:href="@{/backHome}" th:text="#{index.backHome}"></a><br /><br />
+	    
+    <a th:href="@{/allActors}" th:text="#{actorQueries.listAllActors}"></a><br />
+    <a th:href="@{/getActor}" th:text="#{actorQueries.getActor}"></a><br />
+    <a th:href="@{/numberOfActors}" th:text="#{actorQueries.numberOfActors}"></a><br />
+    <a th:href="@{/getActorByName}" th:text="#{actorQueries.getActorByName}"></a><br />
+    
+ 	<a th:href="@{/createActor}" th:text="#{actorQueries.createActor}"></a><br />
+    
+    <a th:href="@{/updateActor}" th:text="#{actorQueries.updateActor}"></a><br />
+  	
+  	<a th:href="@{/deleteActor}" th:text="#{actorQueries.deleteActor}"></a><br />
+
+  	<br /><br />
+  		
+	<a th:href="@{/createActorPhotoMulti}" th:text="#{actorQueries.createActorPhoto}"></a><br/>
+	
+	<a th:href="@{/listAllActorsWithPhotos}" th:text="#{actorQueries.listAllActorsWithPhoto}"></a><br/>
+	<a th:href="@{/getAllPhotosByActor}" th:text="#{actorQueries.getAllPhotosByActor}"></a><br/>
+	<a th:href="@{/getActorWithPhotoByName}" th:text="#{actorQueries.getActorWithPhotoByName}"></a><br/>
+
+	<a th:href="@{/deleteActorPhoto}" th:text="#{actorQueries.deleteActorPhoto}"></a><br/>
+	
+</body>
+</html>

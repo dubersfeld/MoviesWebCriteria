@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<head th:replace="fragments/header::header(title='advancedQueries')">
+</head>
+<body>
+
+	<nav th:replace="fragments/header::language"></nav>
+	
+	<a href="backHome" th:text="#{index.backHome}"></a><br /><br />
+
+ 	<a href="actorMovies" th:text="#{advancedQueries.actorMovies}"></a><br/>
+	<a href="movieActors" th:text="#{advancedQueries.movieActors}"></a><br/>
+	<a href="directorMovies" th:text="#{advancedQueries.directorMovies}"></a><br/>
+	<a href="directorActors" th:text="#{advancedQueries.directorActors}"></a><br/>
+	<a href="actorDirectors" th:text="#{advancedQueries.actorDirectors}"></a><br/>
+
+	<a href="createActorMovie" th:text="#{advancedQueries.createActorMovie}"></a><br/>
+	<a href="createActorMovieTrans" th:text="#{advancedQueries.createActorMovieTrans}"></a><br/>
+	
+</body>
+</html>

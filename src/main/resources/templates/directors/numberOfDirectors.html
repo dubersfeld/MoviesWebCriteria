@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header::header(title='numberOfActors')">
+</head>
+<body>
+
+	<a href="backHome" th:text="#{index.backHome}"></a><br /><br />
+	
+    <h1 th:text="#{directorQueries.numberOfDirectors} + ': ' + ${number}"></h1>
+   
+</body>
+</html>

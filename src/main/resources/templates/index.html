@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/header::header(title='home')">
+</head>
+
+<body>
+      
+	<nav th:replace="fragments/header::language"></nav>
+       
+   	<br/>
+           
+    <a th:href="@{/actorQueries}" th:text="#{index.basicActorQueries}"></a><br/>
+    
+    <a th:href="@{/directorQueries}" th:text="#{index.basicDirectorQueries}"></a><br/>
+    
+    <a th:href="@{/movieQueries}" th:text="#{index.basicMovieQueries}"></a><br/>
+    
+    <a th:href="@{/advancedQueries}" th:text="#{index.advancedQueries}"></a><br/>
+    
+</body>
+</html>
